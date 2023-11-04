@@ -52,3 +52,13 @@ button {
 button:hover {
   cursor: pointer;
 }
+
+@media (min-width: 560px) {
+  span {
+    font-size: 2rem;
+  }
+
+  h1 {
+    padding-top: 1rem;
+  }
+}
