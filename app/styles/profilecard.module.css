@@ -1,0 +1,53 @@
+.section {
+  position: relative;
+}
+
+.social {
+  background-color: var(--clr-primary-blue);
+  padding: 1.5rem 1rem;
+  border-radius: 1rem;
+
+  display: flex;
+  place-content: center;
+  place-items: center;
+  gap: 1rem;
+
+  position: relative;
+  z-index: 2;
+}
+
+.border {
+  border: 2px solid white;
+  border-radius: 9999px;
+}
+
+.btn {
+  color: var(--clr-neutral-desaturatedblue);
+  font-size: 1rem;
+}
+
+.btn:hover {
+  color: white;
+}
+
+.btn-list {
+  background-color: var(--clr-neutral-darkblue);
+  padding: 1.5rem 3rem 1.2rem;
+  border-radius: 0 0 1rem 1rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  position: absolute;
+  width: 100%;
+  bottom: -3.5rem;
+}
+
+.btn-list > * {
+  margin-top: 2rem;
+}
+
+.btn-active {
+  color: white;
+}
