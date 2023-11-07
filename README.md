@@ -2,6 +2,8 @@
 
 A dashboard component that track various activities and the time spent for each one, built with Next.js.
 
+This is a solution to the [Time tracking dashboard challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+
 ![](/public/screenshot/screen.png)
 
 ## Table of Contents
