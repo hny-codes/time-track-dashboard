@@ -23,7 +23,7 @@ export default function ProfileCard({
   return (
     <section className={styles.section}>
       <div className={styles.social}>
-        <div>
+        <div className={styles['mobile-image']}>
           <Image
             src={image}
             alt=''
@@ -32,10 +32,19 @@ export default function ProfileCard({
             className={styles.border}
           />
         </div>
+        <div className={styles['desktop-image']}>
+          <Image
+            src={image}
+            alt=''
+            width={80}
+            height={80}
+            className={styles.border}
+          />
+        </div>
         <div>
           <h1>
             Report for <br />
-            <span>{name}</span>
+            <span className={styles.name}>{name}</span>
           </h1>
         </div>
       </div>

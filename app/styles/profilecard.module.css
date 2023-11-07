@@ -53,6 +53,11 @@
   color: white;
 }
 
+/* Desktop Image */
+.desktop-image {
+  display: none;
+}
+
 @media (min-width: 560px) {
   .social {
     max-width: 15rem;
@@ -60,7 +65,7 @@
     place-items: flex-start;
 
     padding-left: 2rem;
-    padding-bottom: 8rem;
+    padding-bottom: 7rem;
   }
 
   .btn-list {
@@ -81,5 +86,14 @@
 
   .btn-list > *:first-child {
     margin-top: 12rem;
+  }
+
+  /* Image */
+  .mobile-image {
+    display: none;
+  }
+
+  .desktop-image {
+    display: block;
   }
 }
