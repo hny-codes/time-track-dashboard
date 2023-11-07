@@ -60,17 +60,26 @@
     place-items: flex-start;
 
     padding-left: 2rem;
-    padding-bottom: 5rem;
+    padding-bottom: 8rem;
   }
 
   .btn-list {
     max-width: 15rem;
     flex-direction: column;
     align-items: flex-start;
+    gap: 1.5rem;
 
     padding-left: 2rem;
     padding-bottom: 1.7rem;
 
-    bottom: -11rem;
+    bottom: -5.5rem;
+  }
+
+  .btn-list > * {
+    margin-top: 0rem;
+  }
+
+  .btn-list > *:first-child {
+    margin-top: 12rem;
   }
 }

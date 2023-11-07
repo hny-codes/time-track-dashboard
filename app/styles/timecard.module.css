@@ -1,0 +1,164 @@
+.container {
+  position: relative;
+}
+
+/* Card Component */
+
+.card {
+  position: relative;
+  padding: 2rem 0;
+  border-radius: 1rem;
+}
+
+/* Text Card Styling */
+.text-card {
+  background-color: var(--clr-neutral-darkblue);
+  color: white;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+
+  z-index: 2;
+  cursor: pointer;
+}
+
+.text-current {
+  padding-left: 3rem;
+}
+
+/* JS Hovers */
+.hover {
+  background-color: hsl(235, 46%, 35%);
+}
+
+/* Button */
+.btn:hover svg path {
+  fill: white;
+}
+
+.ellipses {
+  padding-right: 3rem;
+  justify-self: end;
+
+  display: grid;
+  grid-template-rows: 2;
+  gap: 1rem;
+
+  justify-items: end;
+}
+
+.ellipses > button {
+  position: relative;
+  z-index: 5;
+  /* background-color: brown; */
+}
+
+.text-card:hover {
+  background-color: hsl(235, 46%, 35%);
+}
+
+/* Text */
+
+.title {
+  font-size: 1rem;
+}
+
+.current {
+  font-size: 2rem;
+}
+
+.previous {
+  font-size: 0.8rem;
+  color: var(--clr-neutral-paleblue);
+  text-align: right;
+}
+
+/* Image Card Styling */
+
+.background-card {
+  position: absolute;
+  min-width: 100%;
+  z-index: 1;
+  top: -0.5rem;
+}
+
+.image {
+  object-fit: none;
+  object-position: right;
+  padding-inline: 3rem;
+}
+
+/* Display different background color for each dashboard time */
+.bg-work {
+  background-color: var(--clr-primary-work);
+}
+
+.bg-play {
+  background-color: var(--clr-primary-play);
+}
+
+.bg-study {
+  background-color: var(--clr-primary-study);
+}
+
+.bg-exercise {
+  background-color: var(--clr-primary-exercise);
+}
+
+.bg-social {
+  background-color: var(--clr-primary-social);
+}
+
+.bg-selfcare {
+  background-color: var(--clr-primary-selfcare);
+}
+
+@media (min-width: 560px) {
+  /* Card Component */
+  .card {
+    padding-bottom: 0rem;
+    width: 250px;
+  }
+
+  /* Text Card Styling */
+  .text-card {
+    padding: 3rem 0;
+  }
+
+  .text-current {
+    padding-inline: 1.5rem;
+    padding-bottom: 1rem;
+  }
+
+  /* Button */
+  .ellipses {
+    padding-right: 1.5rem;
+    align-self: start;
+  }
+
+  /* Text */
+  .title {
+    margin-bottom: 1rem;
+  }
+
+  .previous {
+    position: absolute;
+    left: 1.5rem;
+    bottom: 1.5rem;
+    text-align: left;
+  }
+
+  .current {
+    font-size: 3rem;
+  }
+
+  /* Image */
+  .background-card {
+    padding-block: 2rem;
+  }
+
+  .image {
+    padding-inline: 1rem;
+  }
+}
